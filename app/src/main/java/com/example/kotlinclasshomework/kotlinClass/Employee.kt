@@ -11,7 +11,7 @@ open class Employee {
     }
 
     open fun goHome() {
-        println("Иду домой в 19.00")
+        println("Иду домой")
     }
 }
 
@@ -36,6 +36,18 @@ class Teamlead : Employee() {
 
     override fun haveLunch() {
         println("Сегодня пропущу обед")
+    }
+}
+
+class Student : Employee() {
+
+    override fun goHome() {
+        super.goHome()
+        println("and play videogame")
+    }
+
+    override fun haveLunch() {
+        println("сегодня без еды")
     }
 }
 
